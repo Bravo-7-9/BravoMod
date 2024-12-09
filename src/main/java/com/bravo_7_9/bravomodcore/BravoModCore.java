@@ -24,6 +24,9 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(BravoModCore.MODID)
 public class BravoModCore
 {
+
+    // meow :3
+
     // Define mod id in a common place for everything to reference
     public static final String MODID = "bravomodcore";
     // Directly reference a slf4j logger

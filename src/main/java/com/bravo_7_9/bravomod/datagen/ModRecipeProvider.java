@@ -1,6 +1,6 @@
-package com.bravo_7_9.bravomodcore.datagen;
+package com.bravo_7_9.bravomod.datagen;
 
-import com.bravo_7_9.bravomodcore.item.ModItems;
+import com.bravo_7_9.bravomod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;

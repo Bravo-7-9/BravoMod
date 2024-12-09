@@ -1,14 +1,14 @@
-package com.bravo_7_9.bravomodcore.client;
+package com.bravo_7_9.bravomod.client;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
-import com.bravo_7_9.bravomodcore.client.renderer.entity.BoneBambooBareArrowRenderer;
-import com.bravo_7_9.bravomodcore.world.entity.ModEntityType;
+import com.bravo_7_9.bravomod.BravoMod;
+import com.bravo_7_9.bravomod.client.renderer.entity.BoneBambooBareArrowRenderer;
+import com.bravo_7_9.bravomod.world.entity.ModEntityType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
-@EventBusSubscriber(modid = BravoModCore.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = BravoMod.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientModEventSubscriber {
 
     @SubscribeEvent

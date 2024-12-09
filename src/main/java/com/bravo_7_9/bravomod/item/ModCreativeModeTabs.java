@@ -1,6 +1,6 @@
-package com.bravo_7_9.bravomodcore.item;
+package com.bravo_7_9.bravomod.item;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
+import com.bravo_7_9.bravomod.BravoMod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BravoModCore.MODID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BravoMod.MODID);
 
     public static final Supplier<CreativeModeTab> ARROW_ITEMS_TAB = CREATIVE_MODE_TAB.register("arrow_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WOOD_COPPER_FLETCHED_SHAFT.get()))

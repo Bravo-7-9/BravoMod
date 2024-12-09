@@ -1,7 +1,7 @@
-package com.bravo_7_9.bravomodcore.datagen;
+package com.bravo_7_9.bravomod.datagen;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
-import com.bravo_7_9.bravomodcore.item.ModItems;
+import com.bravo_7_9.bravomod.BravoMod;
+import com.bravo_7_9.bravomod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -9,7 +9,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 public class ModItemModelProvider extends ItemModelProvider {
 
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, BravoModCore.MODID, existingFileHelper);
+        super(output, BravoMod.MODID, existingFileHelper);
     }
 
     @Override

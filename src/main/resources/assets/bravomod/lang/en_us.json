@@ -1,0 +1,19 @@
+{
+  "item.bravomod.spruce_arrowhead": "Spruce Arrowhead",
+  "item.bravomod.bone_arrowhead": "Bone Arrowhead",
+  "item.bravomod.flint_arrowhead": "Flint Arrowhead",
+  "item.bravomod.obsidian_arrowhead": "Obsidian Arrowhead",
+
+  "item.bravomod.feather_fletching": "Feather Fletching",
+  "item.bravomod.copper_vanes": "Copper Vanes",
+
+  "item.bravomod.wood_bare_shaft": "Wood Bare Shaft",
+  "item.bravomod.bamboo_bare_shaft": "Bamboo Bare Shaft",
+  "item.bravomod.wood_feather_fletched_shaft": "Wood Feather Fletched Shaft",
+  "item.bravomod.bamboo_feather_fletched_shaft": "Bamboo Feather Fletched Shaft",
+  "item.bravomod.wood_copper_fletched_shaft": "Wood Copper Fletched Shaft",
+
+  "item.bravomod.bone_bamboo_bare_arrow": "Bone Bamboo Bare Arrow",
+
+  "creativetab.bravomod.arrow_items": "Arrows & Components"
+}

@@ -1,7 +1,7 @@
-package com.bravo_7_9.bravomodcore.world.entity.projectile;
+package com.bravo_7_9.bravomod.world.entity.projectile;
 
-import com.bravo_7_9.bravomodcore.item.ModItems;
-import com.bravo_7_9.bravomodcore.world.entity.ModEntityType;
+import com.bravo_7_9.bravomod.item.ModItems;
+import com.bravo_7_9.bravomod.world.entity.ModEntityType;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;

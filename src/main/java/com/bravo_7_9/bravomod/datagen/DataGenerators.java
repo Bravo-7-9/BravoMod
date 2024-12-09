@@ -1,6 +1,6 @@
-package com.bravo_7_9.bravomodcore.datagen;
+package com.bravo_7_9.bravomod.datagen;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
+import com.bravo_7_9.bravomod.BravoMod;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -11,7 +11,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = BravoModCore.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = BravoMod.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {

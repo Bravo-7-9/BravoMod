@@ -1,6 +1,6 @@
-package com.bravo_7_9.bravomodcore.item.custom;
+package com.bravo_7_9.bravomod.item.custom;
 
-import com.bravo_7_9.bravomodcore.world.entity.projectile.BoneBambooBareArrow;
+import com.bravo_7_9.bravomod.world.entity.projectile.BoneBambooBareArrow;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
 import net.minecraft.world.entity.LivingEntity;

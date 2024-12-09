@@ -1,8 +1,8 @@
-package com.bravo_7_9.bravomodcore;
+package com.bravo_7_9.bravomod;
 
-import com.bravo_7_9.bravomodcore.item.ModItems;
-import com.bravo_7_9.bravomodcore.util.Helpers;
-import com.bravo_7_9.bravomodcore.util.ModTags;
+import com.bravo_7_9.bravomod.item.ModItems;
+import com.bravo_7_9.bravomod.util.Helpers;
+import com.bravo_7_9.bravomod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.Containers;

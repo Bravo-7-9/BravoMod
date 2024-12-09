@@ -1,6 +1,6 @@
-package com.bravo_7_9.bravomodcore.util;
+package com.bravo_7_9.bravomod.util;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
+import com.bravo_7_9.bravomod.BravoMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -11,7 +11,7 @@ public class ModTags {
         public static final TagKey<Item> FLINT_KNAPPABLE = createTag("flint_knappable");
 
         private static TagKey<Item> createTag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(BravoModCore.MODID, name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(BravoMod.MODID, name));
         }
     }
 }

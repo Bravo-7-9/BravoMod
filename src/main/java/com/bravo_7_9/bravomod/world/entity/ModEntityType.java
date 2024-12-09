@@ -1,7 +1,7 @@
-package com.bravo_7_9.bravomodcore.world.entity;
+package com.bravo_7_9.bravomod.world.entity;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
-import com.bravo_7_9.bravomodcore.world.entity.projectile.BoneBambooBareArrow;
+import com.bravo_7_9.bravomod.BravoMod;
+import com.bravo_7_9.bravomod.world.entity.projectile.BoneBambooBareArrow;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModEntityType {
 
-    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, BravoModCore.MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, com.bravo_7_9.bravomod.BravoMod.MODID);
 
     /*
     public static final EntityType<Arrow> ARROW = register(
@@ -21,7 +21,7 @@ public class ModEntityType {
      */
 
     public static final DeferredHolder<EntityType<?>, EntityType<BoneBambooBareArrow>> BONE_BAMBOO_BARE_ARROW = ENTITIES.register(
-            "bone_bamboo_bare_arrow", () -> EntityType.Builder.<BoneBambooBareArrow>of(BoneBambooBareArrow::new, MobCategory.MISC).sized(0.5F,0.5F).eyeHeight(0.13F).clientTrackingRange(4).updateInterval(20).build(ResourceLocation.fromNamespaceAndPath(BravoModCore.MODID, "bone_bamboo_bare_arrow").toString())
+            "bone_bamboo_bare_arrow", () -> EntityType.Builder.<BoneBambooBareArrow>of(BoneBambooBareArrow::new, MobCategory.MISC).sized(0.5F,0.5F).eyeHeight(0.13F).clientTrackingRange(4).updateInterval(20).build(ResourceLocation.fromNamespaceAndPath(BravoMod.MODID, "bone_bamboo_bare_arrow").toString())
     );
 
     public static void register(IEventBus eventBus) {

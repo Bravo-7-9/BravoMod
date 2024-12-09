@@ -1,7 +1,7 @@
-package com.bravo_7_9.bravomodcore.client.renderer.entity;
+package com.bravo_7_9.bravomod.client.renderer.entity;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
-import com.bravo_7_9.bravomodcore.world.entity.projectile.BoneBambooBareArrow;
+import com.bravo_7_9.bravomod.BravoMod;
+import com.bravo_7_9.bravomod.world.entity.projectile.BoneBambooBareArrow;
 import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
@@ -16,6 +16,6 @@ public class BoneBambooBareArrowRenderer extends ArrowRenderer<BoneBambooBareArr
 
     @Override
     public ResourceLocation getTextureLocation(BoneBambooBareArrow entity) {
-        return ResourceLocation.fromNamespaceAndPath(BravoModCore.MODID, "textures/entity/projectiles/bone_bamboo_bare_arrow.png");
+        return ResourceLocation.fromNamespaceAndPath(BravoMod.MODID, "textures/entity/projectiles/bone_bamboo_bare_arrow.png");
     }
 }

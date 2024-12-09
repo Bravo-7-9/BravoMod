@@ -1,4 +1,4 @@
-package com.bravo_7_9.bravomodcore.util;
+package com.bravo_7_9.bravomod.util;
 
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;

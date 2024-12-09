@@ -1,14 +1,14 @@
-package com.bravo_7_9.bravomodcore.item;
+package com.bravo_7_9.bravomod.item;
 
-import com.bravo_7_9.bravomodcore.BravoModCore;
-import com.bravo_7_9.bravomodcore.item.custom.BoneBambooBareArrowItem;
+import com.bravo_7_9.bravomod.BravoMod;
+import com.bravo_7_9.bravomod.item.custom.BoneBambooBareArrowItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(BravoModCore.MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(BravoMod.MODID);
 
     // Arrowheads
 

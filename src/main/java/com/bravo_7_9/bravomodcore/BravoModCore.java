@@ -1,30 +1,12 @@
-package com.bravo_7_9.bravomodcoreoverhaul;
+package com.bravo_7_9.bravomodcore;
 
-import com.bravo_7_9.bravomodcoreoverhaul.client.ClientModEventSubscriber;
-import com.bravo_7_9.bravomodcoreoverhaul.item.ModCreativeModeTabs;
-import com.bravo_7_9.bravomodcoreoverhaul.item.ModItems;
-import com.bravo_7_9.bravomodcoreoverhaul.world.entity.ModEntityType;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
-import net.minecraft.world.item.context.UseOnContext;
-import net.neoforged.bus.api.Event;
-import net.neoforged.neoforge.common.conditions.ICondition;
-import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import com.bravo_7_9.bravomodcore.item.ModCreativeModeTabs;
+import com.bravo_7_9.bravomodcore.item.ModItems;
+import com.bravo_7_9.bravomodcore.world.entity.ModEntityType;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -37,31 +19,25 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.awt.event.InputEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(BravoModCoreOverhaul.MODID)
-public class BravoModCoreOverhaul
+@Mod(BravoModCore.MODID)
+public class BravoModCore
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "bravomodcoreoverhaul";
+    public static final String MODID = "bravomodcore";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public BravoModCoreOverhaul(IEventBus modEventBus, ModContainer modContainer)
+    public BravoModCore(IEventBus modEventBus, ModContainer modContainer)
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in.
-        // Note that this is necessary if and only if we want *this* class (bravomodcoreoverhaul) to respond directly to events.
+        // Note that this is necessary if and only if we want *this* class (bravomodcore) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
